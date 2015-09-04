@@ -28,6 +28,9 @@ body { background-color: #F2F2F2; }
   img { content: url("images/yahoo.png"); }
 }
 
+// Bootstrap overrides
+
+.panel { border: 0 !important; }
 .panel-wrap { padding: 0; }
 .panel-heading { background-color: white !important; padding: 1.3em; }
 .panel-title { font-weight: 300 !important; }
