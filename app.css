@@ -41,11 +41,12 @@ body {
   position: relative; }
   .logged-in a {
     color: #3CB4ED;
-    font-weight: 700;
-    margin-left: 2px; }
+    font-weight: 500;
+    margin-left: 6px;
+    font-size: 14px; }
 
 .dash-title {
-  top: 10px;
+  top: 12px;
   right: 100px;
   color: white;
   float: right;
