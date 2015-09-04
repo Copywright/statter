@@ -1,8 +1,18 @@
 @import "bourbon/bourbon";
 
 h1, h2, h3, p { font-family: 'Helvetica Neue', Arial, sans-serif; }
-
+h3 { font-size: 16px; }
 body { background-color: #F2F2F2; }
+th {
+  color: white;
+  text-align: -webkit-right;
+  background-color: #3CB4E2;
+  &:first-child { text-align: -webkit-left; }
+}
+td {
+  background-color: #F4F4F4;
+}
+// tr :nth-child(odd) { background-color: #EBEBEB; }
 
 .header {
   height: 6em;
@@ -54,6 +64,13 @@ body { background-color: #F2F2F2; }
     font-weight: 300;
   }
 }
+.stat-title { display: inline-block; }
+.track-link {
+  position: relative;
+  float: right;
+  top: 11px;
+  font-size: large;
+}
 
 #site-title {
   color: #337ab7;
@@ -65,6 +82,7 @@ body { background-color: #F2F2F2; }
 #site-details {
   display: inline-block;
 }
+#yh-info { font-weight: 500; }
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
