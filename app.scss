@@ -5,14 +5,16 @@ h3 { font-size: 16px; }
 body { background-color: #F2F2F2; }
 th {
   color: white;
-  text-align: -webkit-right;
+  text-align: -webkit-left;
   background-color: #3CB4E2;
-  &:first-child { text-align: -webkit-left; }
+  &:last-child { text-align: -webkit-right; }
 }
 td {
   background-color: #F4F4F4;
+  width: auto;
+  &:last-child { text-align: -webkit-right; }
 }
-// tr :nth-child(odd) { background-color: #EBEBEB; }
+tbody { tr { &:nth-child(odd) { background-color: #EBEBEB; }  } }
 
 .header {
   height: 6em;
