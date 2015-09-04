@@ -22,19 +22,15 @@ body { background-color: #F2F2F2; }
 }
 
 .header-info { float: right; }
-.tracking-info { background-color: #FAFAFA; border-right: 1px solid #DDD; }
+.tracking-info {
+  background-color: #FAFAFA;
+  border-right: 1px solid #DDD;
+  border-bottom-left-radius: 9px;
+}
 .yahoo {
   margin: 10%;
   img { content: url("images/yahoo.png"); }
 }
-
-// Bootstrap overrides
-
-.panel { border: 0 !important; }
-.panel-wrap { padding: 0; }
-.panel-heading { background-color: white !important; padding: 1.3em; }
-.panel-title { font-weight: 300 !important; }
-.panel-body { padding: 0 !important; }
 
 #site-title {
   color: #337ab7;
@@ -60,3 +56,15 @@ only screen and ( min-resolution: 2dppx) {
     height: 40px;
   }
 }
+
+// Bootstrap overrides
+.panel { border: 0 !important; border-radius: 9px; }
+.panel-wrap { padding: 0; }
+.panel-heading {
+  padding: 1.3em;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: white !important;
+}
+.panel-title { font-weight: 300 !important; }
+.panel-body { padding: 0 !important; }

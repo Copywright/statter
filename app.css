@@ -24,28 +24,13 @@ body {
 
 .tracking-info {
   background-color: #FAFAFA;
-  border-right: 1px solid #DDD; }
+  border-right: 1px solid #DDD;
+  border-bottom-left-radius: 9px; }
 
 .yahoo {
   margin: 10%; }
   .yahoo img {
     content: url("images/yahoo.png"); }
-
-.panel {
-  border: 0 !important; }
-
-.panel-wrap {
-  padding: 0; }
-
-.panel-heading {
-  background-color: white !important;
-  padding: 1.3em; }
-
-.panel-title {
-  font-weight: 300 !important; }
-
-.panel-body {
-  padding: 0 !important; }
 
 #site-title {
   color: #337ab7;
@@ -61,5 +46,23 @@ body {
     content: url("images/statter@2x.png");
     width: 145px;
     height: 40px; } }
+.panel {
+  border: 0 !important;
+  border-radius: 9px; }
+
+.panel-wrap {
+  padding: 0; }
+
+.panel-heading {
+  padding: 1.3em;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: white !important; }
+
+.panel-title {
+  font-weight: 300 !important; }
+
+.panel-body {
+  padding: 0 !important; }
 
 /*# sourceMappingURL=app.css.map */
