@@ -31,6 +31,29 @@ body { background-color: #F2F2F2; }
   margin: 10%;
   img { content: url("images/yahoo.png"); }
 }
+.logged-in {
+  top: 9px;
+  right: 100px;
+  color: white;
+  float: right;
+  font-weight: 200;
+  position:relative;
+  a { color: #3CB4ED; font-weight: 700; margin-left: 2px; }
+}
+.dash-title {
+  top: 10px;
+  right: 100px;
+  color: white;
+  float: right;
+  clear: right;
+  position: relative;
+  h2 {
+    padding: 0;
+    font-size: 20px;
+    margin: 2% 0 0 0;
+    font-weight: 300;
+  }
+}
 
 #site-title {
   color: #337ab7;
@@ -66,5 +89,5 @@ only screen and ( min-resolution: 2dppx) {
   border-top-right-radius: 9px;
   background-color: white !important;
 }
-.panel-title { font-weight: 300 !important; }
+.panel-title { font-weight: 400 !important; }
 .panel-body { padding: 0 !important; }
