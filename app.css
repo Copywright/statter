@@ -31,6 +31,9 @@ body {
   .yahoo img {
     content: url("images/yahoo.png"); }
 
+.panel {
+  border: 0 !important; }
+
 .panel-wrap {
   padding: 0; }
 
