@@ -14,8 +14,7 @@ td {
   width: auto;
   &:last-child { text-align: -webkit-right; }
 }
-tbody { tr { &:nth-child(odd) { background-color: #EBEBEB; }  } }
-
+tr:nth-child(even) {  td { background-color: #EBEBEB; } }
 .header {
   height: 6em;
   max-height: 6em;
@@ -38,9 +37,18 @@ tbody { tr { &:nth-child(odd) { background-color: #EBEBEB; }  } }
   background-color: #FAFAFA;
   border-right: 1px solid #DDD;
   border-bottom-left-radius: 9px;
+  display: table-cell;
+  float: none;
+}
+.tracking-stats {
+  margin: 0;
+  float: none;
+  padding: 3%;
+  bottom: 90px;
+  display: table-cell;
 }
 .yahoo {
-  margin: 10%;
+  margin: 33px;
   img { content: url("images/yahoo.png"); }
 }
 .logged-in {
@@ -73,7 +81,12 @@ tbody { tr { &:nth-child(odd) { background-color: #EBEBEB; }  } }
   top: 11px;
   font-size: large;
 }
-
+#track-btn {
+  float: right;
+  bottom: 26px;
+  z-index: 999;
+  position: relative;
+}
 #site-title {
   color: #337ab7;
   font-size: x-large;
@@ -110,4 +123,4 @@ only screen and ( min-resolution: 2dppx) {
   background-color: white !important;
 }
 .panel-title { font-weight: 400 !important; }
-.panel-body { padding: 0 !important; }
+.panel-body { padding: 0 !important; display: table; width: 100%;}

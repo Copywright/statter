@@ -20,7 +20,7 @@ td {
   td:last-child {
     text-align: -webkit-right; }
 
-tbody tr:nth-child(odd) {
+tr:nth-child(even) td {
   background-color: #EBEBEB; }
 
 .header {
@@ -44,10 +44,19 @@ tbody tr:nth-child(odd) {
 .tracking-info {
   background-color: #FAFAFA;
   border-right: 1px solid #DDD;
-  border-bottom-left-radius: 9px; }
+  border-bottom-left-radius: 9px;
+  display: table-cell;
+  float: none; }
+
+.tracking-stats {
+  margin: 0;
+  float: none;
+  padding: 3%;
+  bottom: 90px;
+  display: table-cell; }
 
 .yahoo {
-  margin: 10%; }
+  margin: 33px; }
   .yahoo img {
     content: url("images/yahoo.png"); }
 
@@ -86,6 +95,12 @@ tbody tr:nth-child(odd) {
   top: 11px;
   font-size: large; }
 
+#track-btn {
+  float: right;
+  bottom: 26px;
+  z-index: 999;
+  position: relative; }
+
 #site-title {
   color: #337ab7;
   font-size: x-large;
@@ -120,6 +135,8 @@ tbody tr:nth-child(odd) {
   font-weight: 400 !important; }
 
 .panel-body {
-  padding: 0 !important; }
+  padding: 0 !important;
+  display: table;
+  width: 100%; }
 
 /*# sourceMappingURL=app.css.map */
