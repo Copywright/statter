@@ -7,18 +7,21 @@ h3 {
 body {
   background-color: #F2F2F2; }
 
+body, html {
+  height: 100%; }
+
 th {
   color: white;
   text-align: -webkit-left;
   background-color: #3CB4E2; }
   th:last-child {
-    text-align: -webkit-right; }
+    text-align: right; }
 
 td {
   background-color: #F4F4F4;
   width: auto; }
   td:last-child {
-    text-align: -webkit-right; }
+    text-align: right; }
 
 tr:nth-child(even) td {
   background-color: #EBEBEB; }
@@ -41,14 +44,16 @@ tr:nth-child(even) td {
 .header-info {
   float: right; }
 
-.tracking-info {
+.info {
   background-color: #FAFAFA;
   border-right: 1px solid #DDD;
   border-bottom-left-radius: 9px;
   display: table-cell;
   float: none; }
+  .info button {
+    margin: 2em 0 0 7.2em; }
 
-.tracking-stats {
+.stats {
   margin: 0;
   float: none;
   padding: 3%;
@@ -95,9 +100,16 @@ tr:nth-child(even) td {
   top: 11px;
   font-size: large; }
 
+.tracking-body {
+  width: 100%;
+  bottom: 15px;
+  display: table;
+  position: relative;
+  padding: 0 !important; }
+
 #track-btn {
-  float: right;
-  bottom: 26px;
+  bottom: 15px;
+  left: 900px;
   z-index: 999;
   position: relative; }
 
@@ -112,6 +124,9 @@ tr:nth-child(even) td {
 
 #yh-info {
   font-weight: 500; }
+
+#list {
+  padding: 0; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .logo {
@@ -131,12 +146,44 @@ tr:nth-child(even) td {
   border-top-right-radius: 9px;
   background-color: white !important; }
 
-.panel-title {
-  font-weight: 400 !important; }
+.site-info {
+  font-weight: 400 !important;
+  top: 12px;
+  position: relative; }
+
+#p-title {
+  font-size: 28px;
+  padding: 0.5em; }
 
 .panel-body {
-  padding: 0 !important;
+  width: 100%;
+  bottom: 15px;
   display: table;
-  width: 100%; }
+  position: relative;
+  padding: 0 !important;
+  top: 0; }
+
+.list-group {
+  margin: 0; }
+
+.list-group-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 2em 27px;
+  margin-bottom: -1px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0; }
+
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.list-group-item:last-child {
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 0;
+  border-bottom: 0; }
 
 /*# sourceMappingURL=app.css.map */
