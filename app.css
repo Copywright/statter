@@ -100,8 +100,7 @@ tr:nth-child(even) td {
 .track-link {
   position: relative;
   float: right;
-  top: 20px;
-  font-size: large; }
+  top: 20px; }
 
 .no-margin {
   margin-top: 0; }
