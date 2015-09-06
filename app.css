@@ -117,7 +117,7 @@ tr:nth-child(even) td {
 
 .heatmap {
   content: url("images/click-activity.png");
-  margin-top: 3em; }
+  margin-top: 2em; }
 
 .footer {
   color: darkgray;
