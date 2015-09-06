@@ -1,6 +1,9 @@
 h1, h2, h3, p {
   font-family: 'Helvetica Neue', Arial, sans-serif; }
 
+h2 {
+  font-size: 21px; }
+
 h3 {
   font-size: 16px; }
 
@@ -97,8 +100,14 @@ tr:nth-child(even) td {
 .track-link {
   position: relative;
   float: right;
-  top: 11px;
+  top: 20px;
   font-size: large; }
+
+.no-margin {
+  margin-top: 0; }
+
+.no-top {
+  top: 0; }
 
 .tracking-body {
   width: 100%;
@@ -106,6 +115,24 @@ tr:nth-child(even) td {
   display: table;
   position: relative;
   padding: 0 !important; }
+
+.heatmap {
+  content: url("images/click-activity.png");
+  margin-top: 3em; }
+
+.footer {
+  color: darkgray;
+  margin-top: 1em;
+  margin-bottom: 2em; }
+  .footer a {
+    font-weight: 700;
+    color: darkgray; }
+
+.copyright {
+  float: left; }
+
+.about {
+  float: right; }
 
 #track-btn {
   bottom: 15px;
@@ -128,6 +155,9 @@ tr:nth-child(even) td {
 #list {
   padding: 0;
   border-right: 0; }
+
+#fix-pos {
+  position: initial; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .logo {
