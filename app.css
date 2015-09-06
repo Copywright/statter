@@ -100,7 +100,7 @@ tr:nth-child(even) td {
 .track-link {
   position: relative;
   float: right;
-  top: 20px; }
+  top: 22px; }
 
 .no-margin {
   margin-top: 0; }
@@ -117,7 +117,7 @@ tr:nth-child(even) td {
 
 .heatmap {
   content: url("images/click-activity.png");
-  margin-top: 2em; }
+  margin-top: 1em; }
 
 .footer {
   color: darkgray;
